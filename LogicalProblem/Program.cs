@@ -6,7 +6,10 @@ namespace LogicalProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Fibonacci fi = new Fibonacci();
+            Console.WriteLine("Enter number till fibonacci number series");
+            int n = Convert.ToInt32(Console.ReadLine());
+            fi.fibonacciSeries(n);
         }
     }
 }
