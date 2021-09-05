@@ -16,12 +16,19 @@ namespace LogicalProblem
             Console.WriteLine("Enter number to check if it is Perfect number");
             int num = Convert.ToInt32(Console.ReadLine());
             pf.checkPerfectNumber(num);
-            */
+            
 
             PrimeNumber pn = new PrimeNumber();
             Console.WriteLine("Enter number to check if it is Prime number");
             int numPrime= Convert.ToInt32(Console.ReadLine());
             pn.checkPrimeNumber(numPrime);
+            */
+
+            Console.WriteLine("Enter number to reverse it");
+            int numRev = Convert.ToInt32(Console.ReadLine());
+            ReverseNumber rn = new ReverseNumber();
+            rn.doReverseNumber(numRev);
+
         }
     }
 }
