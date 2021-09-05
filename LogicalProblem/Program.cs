@@ -22,13 +22,16 @@ namespace LogicalProblem
             Console.WriteLine("Enter number to check if it is Prime number");
             int numPrime= Convert.ToInt32(Console.ReadLine());
             pn.checkPrimeNumber(numPrime);
-            */
-
+            
             Console.WriteLine("Enter number to reverse it");
             int numRev = Convert.ToInt32(Console.ReadLine());
             ReverseNumber rn = new ReverseNumber();
             rn.doReverseNumber(numRev);
-
+            */
+            Console.WriteLine("Enter number to genrate n coupon");
+            int numRev = Convert.ToInt32(Console.ReadLine());
+            CouponGenrator cg = new CouponGenrator();
+            cg.genrateCoupon(numRev);
         }
     }
 }
