@@ -6,7 +6,8 @@ namespace LogicalProblem
     {
         static void Main(string[] args)
         {
-            /*
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             Fibonacci fi = new Fibonacci();
             Console.WriteLine("Enter number till fibonacci number series");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -27,11 +28,15 @@ namespace LogicalProblem
             int numRev = Convert.ToInt32(Console.ReadLine());
             ReverseNumber rn = new ReverseNumber();
             rn.doReverseNumber(numRev);
-            */
+            
             Console.WriteLine("Enter number to genrate n coupon");
-            int numRev = Convert.ToInt32(Console.ReadLine());
+            int numGC = Convert.ToInt32(Console.ReadLine());
             CouponGenrator cg = new CouponGenrator();
-            cg.genrateCoupon(numRev);
+            cg.genrateCoupon(numGC);
+            watch.Stop();
+            var time = watch.ElapsedMilliseconds;
+            Console.WriteLine("Time taken to execute above 5 program is {0} ms",time);
+
         }
     }
 }
